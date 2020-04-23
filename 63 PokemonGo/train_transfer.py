@@ -32,7 +32,7 @@ class Flatten(nn.Module):
         super(Flatten,self).__init__()
 
     def forward(self,x):
-        shape=torch.prod(torch.tensor(x.shape[1:])).item()
+        shape=torch.prod(torch.tensor(x.shape[1:])).item()   # torch.prod 返回所有元素的乘积
         return x.view(-1,shape)
 
 

@@ -27,7 +27,7 @@ class Pokemon(Dataset):
         if mode=='train': # 60%
             self.images=self.images[:int(0.6*len(self.images))]
             self.labels=self.labels[:int(0.6*len(self.labels))]
-        elif mode=='val': # 20%
+        elif mode=='val': # 20% = 60%->80%
             self.images = self.images[int(0.6 * len(self.images)):int(0.8 * len(self.images))]
             self.labels = self.labels[int(0.6 * len(self.labels)):int(0.8 * len(self.labels))]
         else:  # 20% = 80%->100%
