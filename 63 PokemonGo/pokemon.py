@@ -69,7 +69,7 @@ class Pokemon(Dataset):
                 labels.append(label)
 
         assert len(images) == len(labels)
-
+        # print(len(images), images)
         return images,labels
 
 
